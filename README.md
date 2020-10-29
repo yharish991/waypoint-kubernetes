@@ -1,5 +1,5 @@
 # Waypoint kubernetes sample
-Sample Golang app to deploy to Kubernetes using Hashicorp Waypoint
+Sample Golang app to build, deploy and release to Kubernetes using Hashicorp Waypoint
 
 ## Prerequisites
 * Install waypoint cli
@@ -29,4 +29,8 @@ waypoint init
 * Build, deploy and release the app to kubernetes
 ```
 waypoint up
+```
+The output should of the above command should have the release URL. To test your application:
+```
+curl $RELEASE_URL
 ```
